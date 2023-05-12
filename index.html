@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>custom-video-player</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Custom Video Player</h1>
+    <div class="container">
+      <div class="video-player">
+        <video poster="poster.png" src="gone.mp4"></video>
+      </div>
+      <div class="controls">
+        <div class="play">
+            <ion-icon name="play" class="play-icon"></ion-icon>
+            <ion-icon name="pause" class="hide pause-icon"></ion-icon>
+        </div>
+
+        <div class="stop">
+            <ion-icon name="stop"></ion-icon>
+        </div>
+
+
+        <div class="progress">
+        <input type="range" min="0" max="100" step="0.1"
+        value="0" class="progress-range"/>
+        
+        <div class="time">00:00</div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
